@@ -1,0 +1,30 @@
+<p>edit-user works!</p>
+<div class="container" tyle="max-width:400px">
+<h2>
+    Edit USer
+</h2>
+<form
+    (ngSubmit)="updateEmpolyee(ulist.id,ulist)">
+    <p>
+        <label>Name</label>
+            <input type="text" name="user" [(ngModel)]="ulist.email" class="formcontrol">
+        
+    </p>
+    <p>
+        <label>
+            Email
+        </label>
+         <input type="text" name="email" [{ngmodel}]="ulist.phone" class="form-control">
+    </p>
+    <p>
+        <label>
+            Phone
+        </label>
+        <input type="text"  name="phone"  [{ngModel}]="ulist.phone" class="form-control">
+    </p>
+    <p>
+        <input type="submit" value="Update" class="btn btn-primary">&nbsb
+        <input type="button" value="Back" class="btn btn-success" routerLink="/list">
+     </p>
+</form>
+</div>
